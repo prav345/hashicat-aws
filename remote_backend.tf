@@ -4,10 +4,10 @@
 
 terraform {
   backend "remote" {
+    hostname = "app.terraform.io"
     organization = "uop-ppatel1"
-
     workspaces {
       name = "hashicat-aws"
-    } 
-  } 
+    }
+  }
 }
